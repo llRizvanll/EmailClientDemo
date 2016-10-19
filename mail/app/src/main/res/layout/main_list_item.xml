@@ -1,0 +1,88 @@
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="2dp"-->
+        <!-- A CardView that contains a TextView -->
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:text="Mr.Christian Bale."
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:capitalize="words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="subject"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textSize="16dp"
+            android:id="@+id/main_list_item_subject"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Summary"
+                android:layout_gravity="bottom"
+                android:paddingLeft="5dp"
+                android:id="@+id/main_list_item_summary"
+                android:ellipsize="end"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingTop="5dp"
+             android:paddingRight="5dp"
+             android:id="@+id/dateTimeView"
+             android:layout_gravity="right"
+             android:text="30 Sep"/>
+         <!--<ImageView-->
+             <!--android:layout_width="wrap_content"-->
+             <!--android:layout_height="wrap_content"-->
+             <!--/>-->
+            <ViewSwitcher
+                android:id="@+id/switcher"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:transitionName="switchertransition"
+                android:inAnimation="@anim/zoom_in"
+
+                android:layout_gravity="right|center"
+                android:padding="12dp"
+                android:layout_marginTop="2dp">
+
+
+                <ImageView
+                    android:id="@+id/book_mark_id"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bookmark_enable"/>
+
+                <ImageView
+                    android:id="@+id/book_mark_filled_id"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@drawable/bookmark_disable"/>
+            </ViewSwitcher>
+        </FrameLayout>
+    <!--</LinearLayout>-->

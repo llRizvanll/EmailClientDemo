@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary_header_top"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/summary_header_top_subject"
+            android:padding="10dp"
+            android:text="Hey! lets meet this sunday."
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/summary_header"
+        android:layout_below="@id/summary_header_top"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/summary_header_prof_img"
+            android:src="@drawable/icon"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Christian Bale"
+            android:layout_toRightOf="@id/summary_header_prof_img"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:id="@+id/summary_header_prof_name"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Christian@gmail.com"
+            android:id="@+id/summary_header_prof_emailid"
+            android:layout_below="@id/summary_header_prof_name"
+            android:layout_toRightOf="@id/summary_header_prof_img"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:textColor="@android:color/darker_gray"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/summary_header_prof_img"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="To "
+                android:layout_weight="0.9"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/summary_header_prof_to_emailid_head"
+                android:textSize="14dp"
+                android:textColor="@android:color/holo_blue_light"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Christian2@gmail.com,Christian2@gmail.com"
+                android:id="@+id/summary_header_prof_to_emailid"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.1"
+                android:textColor="@android:color/holo_blue_light"
+                android:singleLine="false"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/summary_body"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/summary_header"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/summary_body_content"
+            android:text="sbdfjhvsf msdfvjsdvfj mfsdfjvjsfvjsdf msdfbksdvjfvsdkf msdbfkvsdkfvskjfvksdf  msfvjsvdfjvsdjf msdf jsvfjvsjfdvs sbvdfjvsdjfcjsfd s"/>
+    </RelativeLayout>
+</RelativeLayout>
