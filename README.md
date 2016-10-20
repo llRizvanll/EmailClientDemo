@@ -1,2 +1,2 @@
 # sample_mail
-Demo of Mail Interface for Android
+Demo Mail Interface for Android
